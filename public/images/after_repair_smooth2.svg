@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="600" viewBox="0 0 1200 600">
+  <defs>
+    <filter id="noise2">
+      <feTurbulence type="fractalNoise" baseFrequency="0.75" numOctaves="5" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feBlend in="SourceGraphic" mode="multiply"/>
+    </filter>
+    <linearGradient id="roadGrad2" x1="0.1" y1="0" x2="0.9" y2="1">
+      <stop offset="0%" stop-color="#2a2a2a"/>
+      <stop offset="50%" stop-color="#1c1c1c"/>
+      <stop offset="100%" stop-color="#121212"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="600" fill="url(#roadGrad2)"/>
+  <rect width="1200" height="600" fill="#202020" filter="url(#noise2)" opacity="0.5"/>
+  <!-- White edge lines -->
+  <rect x="52" y="0" width="6" height="600" fill="white" opacity="0.7"/>
+  <rect x="1142" y="0" width="6" height="600" fill="white" opacity="0.7"/>
+  <!-- White lane divider dashes (dual carriageway) -->
+  <rect x="596" y="0" width="8" height="65" rx="2" fill="white" opacity="0.75"/>
+  <rect x="596" y="105" width="8" height="65" rx="2" fill="white" opacity="0.75"/>
+  <rect x="596" y="210" width="8" height="65" rx="2" fill="white" opacity="0.75"/>
+  <rect x="596" y="315" width="8" height="65" rx="2" fill="white" opacity="0.75"/>
+  <rect x="596" y="420" width="8" height="65" rx="2" fill="white" opacity="0.75"/>
+  <rect x="596" y="525" width="8" height="65" rx="2" fill="white" opacity="0.75"/>
+  <!-- Micro-surfacing texture lines -->
+  <line x1="0" y1="150" x2="1200" y2="155" stroke="#333" stroke-width="1.2" opacity="0.3"/>
+  <line x1="0" y1="300" x2="1200" y2="298" stroke="#333" stroke-width="1" opacity="0.25"/>
+  <line x1="0" y1="450" x2="1200" y2="452" stroke="#333" stroke-width="1.2" opacity="0.3"/>
+  <!-- Label -->
+  <rect x="0" y="558" width="1200" height="42" fill="#000" opacity="0.55"/>
+  <text x="600" y="582" font-family="'Courier New',monospace" font-size="15" fill="#6ee7b7" text-anchor="middle" opacity="0.95">POST-REPAIR ✓  Microsurfacing Applied — Rutting Eliminated — PCI 89/100</text>
+</svg>

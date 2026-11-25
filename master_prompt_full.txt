@@ -1,0 +1,487 @@
+<USER_REQUEST>
+MASTER DEVELOPMENT PROMPT – RAISE AI INTELLIGENCE PLATFORM
+
+Project: RAISE – Road Asset Intelligence and Safety Engine
+Objective: Upgrade the existing RAISE software into a futuristic, AI-powered road infrastructure monitoring and maintenance platform.
+
+1. Overall Development Instructions
+
+First, inspect the existing RAISE project, its codebase, architecture, components, database and existing functionality.
+
+Do not rebuild the application from scratch. Integrate all new features into the existing software while preserving its existing working modules.
+
+The software should look like a premium government-grade infrastructure intelligence platform, combining the aesthetics of Palantir, modern GIS systems, Tesla software interfaces and advanced AI command centres.
+
+The interface must be:
+
+- Futuristic but professional.
+- Minimalistic and easy to navigate.
+- Highly interactive.
+- Responsive on desktop, tablets and mobile.
+- Fast and smooth, with subtle animations.
+- Visually impressive during government demonstrations.
+
+2. NEW PAGE: AI ROAD INSPECTION & 3D ANALYSIS
+
+Create a completely new page in the sidebar called:
+
+AI ROAD INSPECTION
+
+This will be the main demonstration module of RAISE.
+
+Demo Road Information
+
+Use the following sample road information throughout this page:
+
+- Road Name: Hirakjyoti Kakati Road
+- Location: By Lane 12
+- Road Passport ID: RAISE-AS-GHY-2026-008741
+- Inspection Type: AI-Powered Road Inspection
+- Inspection Status: Demonstration Mode
+
+Display this information in a premium road profile header.
+
+A. Road Overview
+
+At the top, show a complete visual overview of the selected road.
+
+Display:
+
+- Total road length.
+- Total potholes detected.
+- Total cracks detected.
+- Total damaged road area.
+- Average road condition score.
+- Critical damage locations.
+- Estimated maintenance cost.
+
+Use visually appealing metric cards with animated counters.
+
+B. Full Road Visualisation
+
+Create an interactive visual representation of the entire Hirakjyoti Kakati Road.
+
+Show:
+
+- The complete road layout.
+- Individual pothole locations.
+- Crack locations.
+- Damage severity using different colours.
+- Road segments with different health conditions.
+- Location markers for each detected defect.
+
+Use a top-down road view with clickable damage markers.
+
+When a user clicks any marker, open its individual inspection details.
+
+Include a map view and a dedicated road visualisation view.
+
+C. Examine Pothole – MAIN AI FEATURE
+
+This is the most important feature.
+
+Display multiple pothole photographs in an inspection gallery.
+
+Every photograph should have a prominent button:
+
+EXAMINE POTHOLE
+
+When the user clicks this button, initiate an AI analysis workflow.
+
+The workflow should:
+
+1. Load the selected pothole photograph.
+2. Perform image preprocessing.
+3. Detect the pothole using computer vision.
+4. Segment the damaged region.
+5. Estimate its boundaries.
+6. Generate an interactive 3D-style pothole visualisation.
+7. Calculate dimensions where sufficient scale or depth information is available.
+8. Estimate damaged surface area.
+9. Classify pothole severity.
+10. Generate an AI inspection report.
+
+D. 3D Pothole Visualisation
+
+After clicking EXAMINE POTHOLE, open a dedicated analysis interface.
+
+The left panel should display the original pothole photograph.
+
+The central panel should display an interactive 3D representation of the pothole.
+
+The right panel should display its measurements and AI assessment.
+
+The 3D visualisation should include:
+
+- Pothole depth representation.
+- Length and width.
+- Damaged surface area.
+- Boundary segmentation.
+- Depth colour gradients.
+- Surface irregularities.
+- Interactive rotation.
+- Zoom and pan controls.
+- 3D grid and measurement indicators.
+
+Use Three.js or React Three Fiber for the 3D rendering.
+
+Make the visualisation look like a professional engineering inspection tool.
+
+IMPORTANT: A single ordinary 2D photograph cannot reliably establish real-world depth or physical dimensions without calibration, scale references, depth data or additional views. Clearly distinguish actual measurements from AI estimates. Never fabricate precise engineering measurements. Where data is insufficient, show estimated or unavailable measurements and explain what additional input is needed.
+
+E. AI Analysis Results
+
+Display an inspection report containing:
+
+- Defect identification.
+- Defect classification.
+- Severity: Low / Moderate / High / Critical.
+- Estimated length.
+- Estimated width.
+- Estimated depth, if measurable.
+- Damaged surface area.
+- AI confidence score.
+- Recommended maintenance action.
+- Maintenance priority.
+
+Provide a button to export the analysis as a PDF inspection report.
+
+3. AI VISION ENGINE
+
+Create a separate AI Vision interface.
+
+It should support:
+
+- Road image uploads.
+- Road video uploads.
+- Live camera input where supported.
+- Pothole detection.
+- Crack detection.
+- Rutting detection.
+- Surface deterioration detection.
+- Damage segmentation.
+- Bounding boxes.
+- Confidence scores.
+
+Display the AI detection process visually.
+
+Use animated scanning effects during inference.
+
+Show the original image alongside the AI-processed image.
+
+Use actual model inference wherever possible. Integrate a pretrained YOLO-based road damage detection model through a Python FastAPI backend.
+
+Do not substitute static images or fabricated detection results for actual AI inference. If the model is unavailable, provide a clearly labelled demonstration mode.
+
+4. ROAD DIGITAL PASSPORT
+
+Create a detailed digital passport for every road.
+
+For the demonstration road:
+
+RAISE-AS-GHY-2026-008741
+
+Include:
+
+- Road identity.
+- Geographical location.
+- Road length.
+- Construction details.
+- Responsible department.
+- Contractor details, if available.
+- Historical inspections.
+- Previous maintenance.
+- Detected defects.
+- Repair history.
+- Inspection photographs.
+- Road health score.
+- Current maintenance status.
+
+Include a chronological timeline of the road's history.
+
+5. AI PREDICTIVE INTELLIGENCE
+
+Create a predictive intelligence module.
+
+Analyse available information such as:
+
+- Historical road damage.
+- Rainfall.
+- Drainage conditions.
+- Traffic intensity.
+- Pavement condition.
+- Geographic characteristics.
+
+Display:
+
+- Potential road deterioration.
+- High-risk road segments.
+- Predicted inspection requirements.
+- Waterlogging vulnerability.
+- Maintenance recommendations.
+
+Use interactive heatmaps and risk indicators.
+
+Do not present predictions as guaranteed outcomes.
+
+6. AI MAINTENANCE RECOMMENDATION ENGINE
+
+After road inspection, generate an intelligent maintenance recommendation.
+
+For each detected defect, show:
+
+- Recommended repair method.
+- Required materials.
+- Estimated material quantities.
+- Labour requirements.
+- Preliminary BOQ.
+- Estimated repair cost.
+- Maintenance priority.
+- Recommended inspection timeline.
+
+Include an option to generate a preliminary maintenance proposal PDF.
+
+All cost calculations should be based on configurable assumptions and clearly labelled estimates.
+
+Engineer verification must be required before recommendations become approved maintenance instructions.
+
+7. INTERACTIVE GIS ROAD INTELLIGENCE MAP
+
+Create a premium interactive map.
+
+Include:
+
+- Road networks.
+- Pothole locations.
+- Crack locations.
+- Road health heatmaps.
+- District-wise damage distribution.
+- Critical road sections.
+- Maintenance priority overlays.
+- Rainfall overlays.
+- Flood-risk overlays.
+
+Use Leaflet or Mapbox.
+
+Allow users to filter defects by severity, road, district and inspection date.
+
+Clicking a defect marker should open its inspection information.
+
+8. AI MAINTENANCE ASSISTANT
+
+Integrate an AI chatbot named:
+
+RAISE INTELLIGENCE
+
+It should answer questions about available road inspection data.
+
+Example questions:
+
+- Which roads require immediate maintenance?
+- How many potholes have been detected?
+- Which road has the highest damage severity?
+- What maintenance method is recommended?
+- What is the estimated repair budget?
+- Which road sections are vulnerable to waterlogging?
+
+The chatbot should use actual available RAISE database information wherever possible.
+
+Do not invent government records or inspection results.
+
+9. CONTRACTOR & INFRASTRUCTURE OVERSIGHT
+
+Create a contractor monitoring module.
+
+Include:
+
+- Contractor profiles.
+- Assigned road projects.
+- Project budgets.
+- Construction progress.
+- Inspection history.
+- Repair verification.
+- Reported versus verified work.
+- Project completion status.
+
+Create a transparent infrastructure monitoring dashboard.
+
+Allow authorised engineers to upload inspection evidence and verify completed maintenance work.
+
+Do not automatically assign blame or infer corruption from incomplete records.
+
+10. BEFORE AND AFTER ROAD VERIFICATION
+
+Create an interactive comparison tool.
+
+Allow users to upload:
+
+- Before-repair photograph.
+- After-repair photograph.
+
+Display them side by side with a comparison slider.
+
+Show:
+
+- Previously detected defects.
+- Remaining defects.
+- Repair verification status.
+- Changes in road condition score.
+
+11. CITIZEN REPORTING PORTAL
+
+Create a public-facing reporting interface.
+
+Citizens should be able to:
+
+- Upload pothole photographs.
+- Share GPS location.
+- Select road damage type.
+- Submit a complaint.
+- Track complaint status.
+
+Add an administrative verification workflow before reports enter official inspection records.
+
+12. COMMAND CENTRE DASHBOARD
+
+Upgrade the main RAISE dashboard into an advanced infrastructure command centre.
+
+Include:
+
+- Total kilometres monitored.
+- Total defects detected.
+- Critical road segments.
+- Roads requiring maintenance.
+- District-wise road condition.
+- Maintenance expenditure.
+- AI inspection activity.
+- Recent inspection reports.
+- Pending engineer verifications.
+
+Use interactive charts, animated counters and real database-driven statistics.
+
+13. REPORTS & ANALYTICS
+
+Create a reporting module that can generate:
+
+- Road inspection reports.
+- AI defect analysis reports.
+- Road condition reports.
+- Maintenance recommendations.
+- BOQ estimates.
+- Contractor performance reports.
+- District-wise infrastructure reports.
+
+Allow PDF and CSV exports.
+
+14. DESIGN SYSTEM & USER EXPERIENCE
+
+Use a premium futuristic design language.
+
+Recommended visual direction:
+
+Theme: Dark infrastructure intelligence interface.
+
+Colours:
+
+- Background: Deep navy / charcoal.
+- Primary accent: Electric blue.
+- Secondary accent: Cyan.
+- Critical: Red.
+- Warning: Amber.
+- Healthy: Green.
+
+Typography: Inter, Geist or similar modern sans-serif typography.
+
+Design characteristics:
+
+- Elegant sidebar navigation.
+- Rounded but restrained cards.
+- Subtle glass effects.
+- Clean charts.
+- Smooth page transitions.
+- Interactive map animations.
+- Professional loading states.
+- Skeleton loaders.
+- Responsive layouts.
+- Clear visual hierarchy.
+
+Avoid excessive neon effects, unnecessary gradients, clutter and decorative animations.
+
+The software must remain easy to use for government officers who may not have technical backgrounds.
+
+15. TECHNICAL REQUIREMENTS
+
+Use the existing project stack wherever possible.
+
+Recommended technologies:
+
+- Frontend: React / Next.js.
+- Styling: Tailwind CSS.
+- 3D rendering: Three.js / React Three Fiber.
+- Charts: Recharts.
+- Maps: Leaflet / Mapbox.
+- Computer vision: YOLO.
+- Image processing: OpenCV.
+- Backend: Python FastAPI.
+- Database: PostgreSQL with PostGIS.
+- AI assistant: LLM API.
+
+Requirements:
+
+- Modular architecture.
+- Reusable components.
+- Proper API integration.
+- Database-backed data.
+- Secure file uploads.
+- Error handling.
+- Authentication and role-based permissions.
+- Responsive design.
+- Optimised image and video processing.
+
+Do not expose API keys in frontend code.
+
+16. DEMONSTRATION MODE
+
+Create a dedicated demonstration mode for the Hirakjyoti Kakati Road.
+
+Preload realistic sample road photographs and inspection records.
+
+The demonstration should let an official:
+
+1. Open Hirakjyoti Kakati Road.
+2. View its road passport.
+3. See the complete road layout.
+4. View all detected potholes and cracks.
+5. Select an individual pothole.
+6. Click EXAMINE POTHOLE.
+7. Watch the AI analysis.
+8. View its 3D representation.
+9. Inspect dimensions and severity.
+10. Generate maintenance recommendations.
+11. Generate a preliminary BOQ.
+12. View the final inspection report.
+
+Make this a smooth end-to-end demonstration.
+
+All simulated information must be clearly identified as demonstration data.
+
+17. FINAL DEVELOPMENT INSTRUCTION
+
+Prioritise functionality over decorative visuals.
+
+Do not create buttons that do nothing.
+
+Every navigation item, filter, upload button, inspection action, map marker, report generator and interactive control must have a working action or a clearly labelled demonstration behaviour.
+
+Do not break existing RAISE functionality.
+
+Build the new AI Road Inspection page first, including the EXAMINE POTHOLE workflow and 3D visualisation. Then integrate the remaining modules.
+
+The final product should feel like a real, next-generation AI-powered government road infrastructure intelligence platform.
+
+The central experience should communicate one message: RAISE doesn't just detect road damage. It understands, analyses, monitors and helps manage the entire road maintenance lifecycle.
+
+</USER_REQUEST>
+<ADDITIONAL_METADATA>
+The current local time is: 2026-11-18T20:45:44+05:30.
+</ADDITIONAL_METADATA>

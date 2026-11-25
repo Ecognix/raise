@@ -1,0 +1,125 @@
+<USER_REQUEST>
+MASTER DEVELOPMENT PROMPT – RAISE AI INTELLIGENCE PLATFORM
+
+Project: RAISE – Road Asset Intelligence and Safety Engine
+Objective: Upgrade the existing RAISE software into a futuristic, AI-powered road infrastructure monitoring and maintenance platform.
+
+1. Overall Development Instructions
+
+First, inspect the existing RAISE project, its codebase, architecture, components, database and existing functionality.
+
+Do not rebuild the application from scratch. Integrate all new features into the existing software while preserving its existing working modules.
+
+The software should look like a premium government-grade infrastructure intelligence platform, combining the aesthetics of Palantir, modern GIS systems, Tesla software interfaces and advanced AI command centres.
+
+The interface must be:
+
+- Futuristic but professional.
+- Minimalistic and easy to navigate.
+- Highly interactive.
+- Responsive on desktop, tablets and mobile.
+- Fast and smooth, with subtle animations.
+- Visually impressive during government demonstrations.
+
+2. NEW PAGE: AI ROAD INSPECTION & 3D ANALYSIS
+
+Create a completely new page in the sidebar called:
+
+AI ROAD INSPECTION
+
+This will be the main demonstration module of RAISE.
+
+Demo Road Information
+
+Use the following sample road information throughout this page:
+
+- Road Name: Hirakjyoti Kakati Road
+- Location: By Lane 12
+- Road Passport ID: RAISE-AS-GHY-2026-008741
+- Inspection Type: AI-Powered Road Inspection
+- Inspection Status: Demonstration Mode
+
+Display this information in a premium road profile header.
+
+A. Road Overview
+
+At the top, show a complete visual overview of the selected road.
+
+Display:
+
+- Total road length.
+- Total potholes detected.
+- Total cracks detected.
+- Total damaged road area.
+- Average road condition score.
+- Critical damage locations.
+- Estimated maintenance cost.
+
+Use visually appealing metric cards with animated counters.
+
+B. Full Road Visualisation
+
+Create an interactive visual representation of th
+<truncated 9769 bytes>
+S.
+- AI assistant: LLM API.
+
+Requirements:
+
+- Modular architecture.
+- Reusable components.
+- Proper API integration.
+- Database-backed data.
+- Secure file uploads.
+- Error handling.
+- Authentication and role-based permissions.
+- Responsive design.
+- Optimised image and video processing.
+
+Do not expose API keys in frontend code.
+
+16. DEMONSTRATION MODE
+
+Create a dedicated demonstration mode for the Hirakjyoti Kakati Road.
+
+Preload realistic sample road photographs and inspection records.
+
+The demonstration should let an official:
+
+1. Open Hirakjyoti Kakati Road.
+2. View its road passport.
+3. See the complete road layout.
+4. View all detected potholes and cracks.
+5. Select an individual pothole.
+6. Click EXAMINE POTHOLE.
+7. Watch the AI analysis.
+8. View its 3D representation.
+9. Inspect dimensions and severity.
+10. Generate maintenance recommendations.
+11. Generate a preliminary BOQ.
+12. View the final inspection report.
+
+Make this a smooth end-to-end demonstration.
+
+All simulated information must be clearly identified as demonstration data.
+
+17. FINAL DEVELOPMENT INSTRUCTION
+
+Prioritise functionality over decorative visuals.
+
+Do not create buttons that do nothing.
+
+Every navigation item, filter, upload button, inspection action, map marker, report generator and interactive control must have a working action or a clearly labelled demonstration behaviour.
+
+Do not break existing RAISE functionality.
+
+Build the new AI Road Inspection page first, including the EXAMINE POTHOLE workflow and 3D visualisation. Then integrate the remaining modules.
+
+The final product should feel like a real, next-generation AI-powered government road infrastructure intelligence platform.
+
+The central experience should communicate one message: RAISE doesn't just detect road damage. It understands, analyses, monitors and helps manage the entire road maintenance lifecycle.
+
+</USER_REQUEST>
+<ADDITIONAL_METADATA>
+The current local time is: 2026-11-18T20:45:44+05:30.
+</ADDITIONAL_METADATA>

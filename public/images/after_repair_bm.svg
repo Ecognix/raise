@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="600" viewBox="0 0 1200 600">
+  <defs>
+    <filter id="noise4">
+      <feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="4" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feBlend in="SourceGraphic" mode="multiply"/>
+    </filter>
+    <linearGradient id="rg4" x1="0" y1="0" x2="0.2" y2="1">
+      <stop offset="0%" stop-color="#313131"/>
+      <stop offset="60%" stop-color="#1d1d1d"/>
+      <stop offset="100%" stop-color="#0e0e0e"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="600" fill="url(#rg4)"/>
+  <rect width="1200" height="600" fill="#222" filter="url(#noise4)" opacity="0.5"/>
+  <!-- Edge lines -->
+  <rect x="62" y="0" width="6" height="600" fill="white" opacity="0.72"/>
+  <rect x="1132" y="0" width="6" height="600" fill="white" opacity="0.72"/>
+  <!-- Yellow centre dashes (national highway style) -->
+  <rect x="596" y="5" width="8" height="80" rx="2" fill="#f5d040" opacity="0.88"/>
+  <rect x="596" y="130" width="8" height="80" rx="2" fill="#f5d040" opacity="0.88"/>
+  <rect x="596" y="255" width="8" height="80" rx="2" fill="#f5d040" opacity="0.88"/>
+  <rect x="596" y="380" width="8" height="80" rx="2" fill="#f5d040" opacity="0.88"/>
+  <rect x="596" y="505" width="8" height="80" rx="2" fill="#f5d040" opacity="0.88"/>
+  <!-- Surface evenness indicator line (slight reflection) -->
+  <rect x="62" y="295" width="1076" height="2" fill="white" opacity="0.08"/>
+  <!-- Label -->
+  <rect x="0" y="558" width="1200" height="42" fill="#000" opacity="0.55"/>
+  <text x="600" y="582" font-family="'Courier New',monospace" font-size="15" fill="#6ee7b7" text-anchor="middle" opacity="0.95">POST-REPAIR ✓  Bituminous Macadam Overlay — Alligator Cracking Resolved — PCI 88/100</text>
+</svg>

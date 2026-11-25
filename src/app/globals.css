@@ -1,0 +1,184 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: #F8FAFC;
+    color: #1E293B;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+}
+
+/* Custom Leaflet Map Pin Styles - Official Government Aesthetic */
+.custom-defect-marker {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: none;
+}
+
+.marker-pin {
+  width: 24px;
+  height: 24px;
+  border-radius: 50% 50% 50% 0;
+  position: absolute;
+  transform: rotate(-45deg);
+  left: 50%;
+  top: 50%;
+  margin: -16px 0 0 -12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.3);
+  border: 1.5px solid #FFFFFF;
+}
+
+.marker-pin.high,
+.marker-pin.severe {
+  background-color: #DC2626;
+}
+
+.marker-pin.medium,
+.marker-pin.moderate {
+  background-color: #D97706;
+}
+
+.marker-pin.low,
+.marker-pin.good {
+  background-color: #15803D;
+}
+
+.marker-pin-inner {
+  width: 8px;
+  height: 8px;
+  background: white;
+  border-radius: 50%;
+  transform: rotate(45deg);
+}
+
+/* Vehicle Markers */
+.marker-vehicle-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.marker-vehicle {
+  width: 28px;
+  height: 28px;
+  border-radius: 4px;
+  border: 1.5px solid #1B2F4B;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  font-weight: 700;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.25);
+}
+
+.marker-vehicle.online {
+  background-color: #FFFFFF;
+  color: #1B2F4B;
+}
+
+.marker-vehicle.offline {
+  background-color: #64748B;
+  color: #FFFFFF;
+  border-color: #475569;
+}
+
+.marker-vehicle.dead_zone {
+  background-color: #FEF3C7;
+  color: #B45309;
+  border-color: #F59E0B;
+}
+
+/* Pulsing dot for online vehicles */
+.vehicle-pulse-dot {
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  width: 10px;
+  height: 10px;
+  background-color: #16A34A;
+  border: 1.5px solid #FFFFFF;
+  border-radius: 50%;
+}
+
+.vehicle-pulse-ring {
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  width: 10px;
+  height: 10px;
+  background-color: #16A34A;
+  border-radius: 50%;
+  opacity: 0.75;
+  animation: pulse-ring 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes pulse-ring {
+  0% {
+    transform: scale(0.95);
+    opacity: 0.8;
+  }
+  70% {
+    transform: scale(2.2);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(2.2);
+    opacity: 0;
+  }
+}
+
+.marker-drain {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1.5px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+  font-size: 10px;
+}
+
+.marker-drain.blocked {
+  background-color: #9333EA;
+}
+
+.marker-drain.partially_blocked {
+  background-color: #0284C7;
+}
+
+.marker-drain.clear {
+  background-color: #0D9488;
+}
+
+/* Leaflet Container Fixes */
+.leaflet-container {
+  font-family: inherit;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
+
+/* Custom Scrollbar for sleek government look */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F1F5F9;
+}
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 2px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94A3B8;
+}
