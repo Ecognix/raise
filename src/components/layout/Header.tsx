@@ -59,16 +59,16 @@ export const Header: React.FC<HeaderProps> = ({ onOpenNotifications }) => {
       <div className="px-3 sm:px-5 py-2.5 flex items-center justify-between gap-3">
         {/* Left: Department Logo Placeholder Slot + Titles */}
         <div className="flex items-center gap-3">
-          {/* Logo Placeholder - Clearly marked slot (no state emblem drawn) */}
+          {/* Logo Slot with R emblem */}
           <div
-            title="Designated slot for Official Department Emblem / Logo"
-            className="w-12 h-12 bg-white/10 border border-dashed border-amber-400/80 rounded flex flex-col items-center justify-center p-1 text-center shrink-0 hover:bg-white/15 transition cursor-help"
+            title="RAISE - Road Asset Intelligence and Safety Engine"
+            className="w-12 h-12 bg-gradient-to-br from-amber-400/20 to-cyan-500/20 border border-amber-400/80 rounded-lg flex flex-col items-center justify-center p-1 text-center shrink-0 hover:bg-white/15 transition shadow-inner"
           >
-            <span className="text-[9px] font-bold tracking-tight text-amber-300 leading-none">
-              PWrD
+            <span className="text-xl font-black tracking-tight text-amber-300 leading-none">
+              R
             </span>
-            <span className="text-[7px] text-slate-300 leading-tight mt-0.5 uppercase font-medium">
-              Logo Slot
+            <span className="text-[7px] text-slate-300 leading-tight mt-0.5 uppercase font-semibold tracking-wider">
+              RAISE
             </span>
           </div>
 

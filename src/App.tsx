@@ -76,7 +76,7 @@ export const App: React.FC = () => {
 
   return (
     <DataProvider>
-      <div className="min-h-screen flex flex-col bg-[#070D18] text-slate-100 font-sans antialiased selection:bg-cyan-500/30">
+      <div className="h-screen overflow-hidden flex flex-col bg-[#070D18] text-slate-100 font-sans antialiased selection:bg-cyan-500/30">
         {/* 1. Official Government Header */}
         <Header onOpenNotifications={() => setShowNotifications(true)} />
 
@@ -84,10 +84,10 @@ export const App: React.FC = () => {
         <StatusStrip breadcrumbs={[pageTitles[currentPage]]} />
 
         {/* 3. Main Body: Left Sidebar Navigation + Content Area */}
-        <div className="flex-1 flex overflow-hidden">
+        <div className="flex-1 min-h-0 flex overflow-hidden">
           <Sidebar currentPage={currentPage} onPageChange={setCurrentPage} />
 
-          <main className="flex-1 overflow-y-auto p-3 sm:p-5 lg:p-6 bg-[#0B1324]">
+          <main className="flex-1 h-full overflow-y-auto p-3 sm:p-5 lg:p-6 bg-[#0B1324]">
             <div className="max-w-7xl mx-auto space-y-4">
               {/* 1. OFFICIAL EXECUTIVE HOME DASHBOARD */}
               {currentPage === 'dashboard' && (
